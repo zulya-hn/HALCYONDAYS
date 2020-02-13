@@ -1,0 +1,19 @@
+.section {
+  padding: 110px 0; }
+
+.each__title {
+  text-align: center; }
+
+.section__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.25px;
+  color: #353535;
+  margin-bottom: 25px; }
+
+.dots {
+  margin-bottom: 5px; }
+
+.arrow {
+  margin: 0 35px; }
