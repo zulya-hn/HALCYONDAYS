@@ -1,5 +1,6 @@
 .section {
-  padding: 110px 0; }
+  padding: 105px 0;
+  background-color: #f3f5f8; }
 
 .each__title {
   text-align: center; }
@@ -17,3 +18,42 @@
 
 .arrow {
   margin: 0 35px; }
+
+.section__text {
+  max-width: 740px;
+  margin: 0 auto;
+  padding-top: 60px;
+  line-height: 30px;
+  text-align: center; }
+  .section__text span {
+    color: #353535;
+    font-weight: 700; }
+
+.love {
+  padding: 100px 0; }
+
+.love__services {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 80px; }
+
+.love__item {
+  width: 30%; }
+
+.love__title {
+  padding-top: 45px;
+  color: #353535;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .love__title::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
+    width: 33px;
+    height: 3px;
+    background-color: #3dc9b3; }
+
+.fu {
+  padding-top: 200px; }
