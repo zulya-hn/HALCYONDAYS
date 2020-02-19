@@ -48,7 +48,7 @@
 .love
     padding: 100px 0
 
-.love__services
+.love__inner
     display: flex
     justify-content: space-between
     text-align: center
@@ -58,12 +58,8 @@
 .love__item
     width: 30%
 
-
-
-
 .love__title
     padding-top: 45px
-    //text-align: center
 
     color: #353535
     font-size: 15px
@@ -77,11 +73,133 @@
         height: 3px
         background-color: #3dc9b3
 
-//.love__text
-//    text-align: center
-//
-//.love_i
-//    text-align: center
+// with__carousel
+// with__carousel
+// with__carousel
+
+.with__carousel
+    display: flex
+
+
+.iphone__block
+    overflow: hidden
+
+    background-color: #f3f5f8
+
+    max-width: 50%
+    img
+        max-width: 120%
+        margin:
+            left: 160px
+            top: 20px
+
+.carousel__block
+    background: white
+    box-shadow: -12px 5px 31px -22px rgba(52, 51, 50, 0.74)
+
+//nature
+//nature
+//nature
+
+.nature
+    max-width: 100%
+
+    background: url(../img/nature.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+
+.nature__inner
+    text-align: center
+    color: white
+
+    padding: 80px 0 50px
+
+.nature__title
+    font-size: 40px
+    font-weight: 100
+    text-transform: uppercase
+    letter-spacing: 10px
+
+    margin-bottom: 30px
+
+.nature__title-2
+    margin-bottom: 40px
+
+    font-size: 25px
+    font-weight: 100
+    text-transform: uppercase
+    letter-spacing: 7.5px
+    span
+        font-weight: 700
+
+//view__more
+//view__more
+//view__more
+
+.view
+    padding: 100px 0
+
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.view__item
+    width: 30%
+    position: relative
+    text-align: center
+
+    cursor: pointer
+
+.view__title
+    padding-top: 45px
+
+    color: #353535
+    font-size: 15px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 2.25px
+    &::after
+        content: ""
+        display: block
+        margin: 15px auto 35px
+        width: 33px
+        height: 3px
+        background-color: #3dc9b3
+
+.view__more
+    color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 15px
+    opacity: 0
+
+    width: 100%
+    position: absolute
+    top: 15%
+    left: 5%
+    z-index: 2
+
+
+    transition: opacity .5s linear
+    i
+        margin-bottom: 15px
+        font-size: 30px
+
+.view__img
+    background-color: #3dc9b3
+    img
+        display: block
+
+.blue__hover
+    width: max-content
+    &:hover
+        .view__img
+            img
+                opacity: .3
+                filter: blur(4px)
+        .view__more
+            opacity: 1
 
 
 
@@ -89,8 +207,10 @@
 
 
 
-.fu
-    padding-top: 200px
+
+
+
+
 
 
 

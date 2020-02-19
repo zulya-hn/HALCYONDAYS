@@ -1,6 +1,7 @@
 let gulp        = require('gulp'), // Подключаем Gulp
     sass        = require('gulp-sass'), //Подключаем Sass пакет,
-    browserSync = require('browser-sync'); // Подключаем Browser Sync
+    browserSync = require('browser-sync'), // Подключаем Browser Sync
+    requirejs   = require('gulp-requirejs');
 
 gulp.task('sass', function() { // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass') // Берем источник
@@ -10,12 +11,17 @@ gulp.task('sass', function() { // Создаем таск Sass
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('app/js/common.js')
+    return requirejs({
+        baseUrl: 'app/js/',
+        main: 'common.js',
+        out: 'build.js',
+    })
+        .pipe(gulp.dest('app/js/'))
         .pipe(browserSync.reload({ stream: true }))
 });
 
-gulp.task('code', function() {
-    return gulp.src('app/*.html')
+gulp.task('markup', function() {
+    return gulp.src('app/**/*.html')
         .pipe(browserSync.reload({ stream: true }))
 });
 
@@ -30,6 +36,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
+    gulp.watch('app/**/*.html', gulp.parallel('markup')); // Наблюдение за sass файлами
+    gulp.watch('app/js/**/*.js', gulp.parallel('scripts')); // Наблюдение за sass файлами
 });
 
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
