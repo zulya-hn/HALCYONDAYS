@@ -1,15 +1,41 @@
-let owlCarousel = require('owl.carousel');
-
-console.log(owlCarousel, 'fsgr');
-
-
+// let owlCarousel = require('owl.carousel');
 
 $(document).ready(function(){
-    $('.love__item').hover(
-        function() {
-            $( this ).removeClass('love_i');
-        }, function() {
-            $( this ).addClass('love_i');
+    $('#phone__car').owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        nav:false,
+    });
+});
+
+$(document).ready(function(){
+    $('#team__car').owlCarousel({
+        items: 3,
+        dots:true,
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            700:{
+                items:2
+            },
+            770:{
+                items:3
+            }
         }
-    );
+    });
+});
+
+// Menu nav toggle (burger)
+
+$('#nav_toggle').on('click', function (event) {
+    event.preventDefault();
+    
+    $(this).toggleClass('active');
+    $('#nav').toggleClass('active');
+    
 });

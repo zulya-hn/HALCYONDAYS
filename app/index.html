@@ -7,166 +7,535 @@
         <meta http-equiv="X-UA-Compatible"
               content="ie=edge">
         <title>HalcyonDays</title>
-        <link rel="stylesheet" href="css/0_intro.css">
-        <link href="/your-path-to-fontawesome/css/all.css"
+        <script src="https://kit.fontawesome.com/a9ce1a537d.js"
+        crossorigin="anonymous"></script>
+        <script src="js/jquery/jquery-3.4.1.min.js"></script>
+        <script src="js/owlcarousel2/owl.carousel.min.js"></script>
+        <script src="js/build.js"></script>
+        <script src="js/common.js"></script>
+    
+        <link rel="stylesheet" href="css/!_intro.css">
+        <link href="../awesome/css/all.css"
               rel="stylesheet">
         <link rel="stylesheet"
               type="text/css"
-              href="awesome/css/fontawesome.min.css">
-        <script src="https://kit.fontawesome.com/a9ce1a537d.js"
-                crossorigin="anonymous"></script>
-        <script src="js/build.js"></script>
+              href="../awesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="owlcarousel2/assets/owl.carousel.css">
+        <link rel="stylesheet" href="owlcarousel2/assets/owl.theme.default.css">
     </head>
     
     <body>
-        <header class="header">
+        <header class="header active">
             <div class="container">
-                    <button class="nav-toggle" id="nav_toggle" type="button" >
+                <nav class="nav active"
+                     id="nav">
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#about">About</a>
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#service">Service</a>
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#work">Work</a>
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#blog">Blog</a>
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#team">Team</a>
+                    <a class="nav__link"
+                       href="#"
+                       data-scroll="#contact">Contact</a>
+                </nav>
+                    <button class="nav-toggle active" id="nav_toggle" type="button" >
                         <span class="nav-toggle__item">#372c3c</span>
                     </button>
                 </div>
             </div>
         </header>
-        
-        <div class="intro">
-            <div class="container">
-                <div class="intro__inner">
-                    
+
+        <div class="page">
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
                         <h1 class="intro__title">HALCYON<span>DAYS</span></h1>
                         <h2 class="intro__subtitle">An exclusive HTML5/CSS3 freebie
                             by Peter Finlan, for <span>Codrops.</span></h2>
-                        <button class="intro__button" onclick="window.location.href = '#';">Learn more</button>
-                    
+                        <button class="intro__button"
+                                onclick="window.location.href = '#';">Learn more
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <section class="section">
-            <div class="container">
+    
+            <section class="section" id="about">
+                <div class="container">
                     <div class="each__title"> <!--TITLE-->
                         <div class="section__title">a creative portfolio template</div>
-                        <img class="dots" src="img/dots.png" alt="">
-                            <img class="arrow" src="img/down.png" alt="">
-                        <img class="dots" src="img/dots.png" alt="">
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                        <img class="arrow"
+                             src="img/down.png"
+                             alt="">
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
                     </div> <!--TITLE-->
-               <div class="section__text">
-                   Sed a lorem quis neque interdum <span>consequat ut sed sem.</span> Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-               </div>
-            </div>
-        </section>
-        
-        <section class="love">
-            <div class="container">
-                <div class="each__title"> <!--TITLE-->
-                    <div class="section__title">LOVE WHAT YOU DO, AND YOU’LL DO IT WELL</div>
-                    <img class="dots" src="img/dots.png" alt="">
-                    <img class="arrow" src="img/down.png" alt="">
-                    <img class="dots" src="img/dots.png" alt="">
-                </div> <!--TITLE-->
-                <div class="love__inner">
-                    <div class="love__item">
-                        <img src="img/love1.png" alt="">
-                        <div class="love__title">DIGITAL DESIGN //</div>
-                        <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                            primis in faucibus.</div>
+                    <div class="section__text">
+                        Sed a lorem quis neque interdum <span>consequat ut sed sem.</span> Duis quis tempor nunc.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at
+                        massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum
+                        neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et
+                        malesuada fames ac ante ipsum primis in faucibus.
                     </div>
-                    <div class="love__item">
-                        <img src="img/love2.png" alt="">
-                        <div class="love__title">WEB DEVELOPMENT //</div>
-                        <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                            primis in faucibus.</div>
-                    </div>
-                    <div class="love__item">
-                        <img src="img/love3.png" alt="">
-                        <div class="love__title">WE LOVE YOU //</div>
-                        <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
-                            primis in faucibus.</div>
-                    </div>
-                </div> <!--love__services-->
-            </div><!--container-->
-        </section>
-        
-        <section class="with__carousel">
+                </div>
+            </section>
+    
+            <section class="love" id="services">
+                <div class="container">
+                    <div class="each__title"> <!--TITLE-->
+                        <div class="section__title">LOVE WHAT YOU DO, AND YOU’LL DO IT WELL</div>
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                        <img class="arrow"
+                             src="img/down.png"
+                             alt="">
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                    </div> <!--TITLE-->
+                    <div class="love__inner">
+                        <div class="love__item">
+                            <img src="img/love1.png"
+                                 alt="">
+                            <div class="love__title">DIGITAL DESIGN //</div>
+                            <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
+                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
+                                fames ac ante ipsum
+                                primis in faucibus.
+                            </div>
+                        </div>
+                        <div class="love__item">
+                            <img src="img/love2.png"
+                                 alt="">
+                            <div class="love__title">WEB DEVELOPMENT //</div>
+                            <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
+                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
+                                fames ac ante ipsum
+                                primis in faucibus.
+                            </div>
+                        </div>
+                        <div class="love__item">
+                            <img src="img/love3.png"
+                                 alt="">
+                            <div class="love__title">WE LOVE YOU //</div>
+                            <div class="love__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
+                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
+                                fames ac ante ipsum
+                                primis in faucibus.
+                            </div>
+                        </div>
+                    </div> <!--love__services-->
+                </div><!--container-->
+            </section>
+    
+
+            
+            <section class="with__carousel" id="work">
                 <div class="iphone__block">
-                    <img src="../img/iPhone.png" alt="">
+                    <img src="../img/iPhone.png"
+                         alt="">
                 </div>
-                <div class="carousel__block">
-                    Тут будет карусель
+                <div class="carousel__block" >
+                    <div class="owl-carousel owl-theme" id="phone__car">
+                        <div class="item">
+                            <div class="each__title-c"> <!--TITLE-->
+                                <div class="section__title-c">responsive design specialist</div>
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                                <img class="arrow-c"
+                                     src="img/down.png"
+                                     alt="">
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                            </div> <!--TITLE-->
+                            <div class="carousel__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
+                                    metus
+                                    pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                
+                                <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus
+                                    faucibus
+                                    facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+                
+                                <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem.
+                                    Suspendisse
+                                    sed venenatis odio, quis lobortis eros.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="each__title-c"> <!--TITLE-->
+                                <div class="section__title-c">a creative portfolio template</div>
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                                <img class="arrow-c"
+                                     src="img/down.png"
+                                     alt="">
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                            </div> <!--TITLE-->
+                            <div class="carousel__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
+                                    metus
+                                    pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            
+                                <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus
+                                    faucibus
+                                    facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+            
+                                <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem.
+                                    Suspendisse
+                                    sed venenatis odio, quis lobortis eros.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="each__title-c"> <!--TITLE-->
+                                <div class="section__title-c">pixel perfection</div>
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                                <img class="arrow-c"
+                                     src="img/down.png"
+                                     alt="">
+                                <img class="dots-c"
+                                     src="img/dots-c.png"
+                                     alt="">
+                            </div> <!--TITLE-->
+                            <div class="carousel__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non
+                                    metus
+                                    pulvinar imperdiet. Praesent non adipiscing libero.</p>
+            
+                                <p>Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus
+                                    faucibus
+                                    facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
+            
+                                <p>Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem.
+                                    Suspendisse
+                                    sed venenatis odio, quis lobortis eros.</p>
+                            </div>
+                        </div>
+                   </div>
                 </div>
-        </section>
+            </section>
     
-        <section class="nature">
-            <div class="nature__inner">
-                <div class="nature__title">I GOT 99 PROBLEMS</div>
-                <div class="nature__title-2">BUT <span>DESIGN</span> ‘AINT ONE</div>
-                <img src="img/nature__arrow.png" class="nature__arrow">
-            </div>
-        </section>
+            <section class="nature" id="blog">
+                <div class="nature__inner">
+                    <div class="nature__title">I GOT 99 PROBLEMS</div>
+                    <div class="nature__title-2">BUT <span>DESIGN</span> ‘AINT ONE</div>
+                    <div class="circle-n">
+                        <div class="circle__arrow-n"></div>
+                    </div>
+                </div>
+            </section>
     
-        <section>
-            <div class="container">
-                <a href="#">
-                    <div class="view">
-                        <div class="view__item">
-                            <div class="blue__hover">
-                                <div class="view__img"><img src="img/view1.png"
-                                                            alt="">
+            <section>
+                <div class="container">
+                    <a href="#">
+                        <div class="view">
+                            <div class="view__item">
+                                <div class="blue__hover">
+                                    <div class="view__img"><img src="img/view1.png"
+                                                                alt="">
+                                    </div>
+                                    <div class="view__more">
+                                        <div><i class="fas fa-search"></i></div>
+                                        VIEW MORE
+                                    </div>
                                 </div>
-                                <div class="view__more">
-                                    <div><i class="fas fa-search"></i></div>
-                                    VIEW MORE
+                                <div class="view__title">creative minds //</div>
+                                <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
                                 </div>
                             </div>
-                            <div class="view__title">creative minds //</div>
-                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
-                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
-                                fames ac ante ipsum
-                                primis in faucibus.
+                            <div class="view__item">
+                                <div class="blue__hover">
+                                    <div class="view__img"><img src="img/view2.png"
+                                                                alt="">
+                                    </div>
+                                    <div class="view__more">
+                                        <div><i class="fas fa-search"></i></div>
+                                        VIEW MORE
+                                    </div>
+                                </div>
+                                <div class="view__title">think alike //</div>
+                                <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                                </div>
+                            </div>
+                            <div class="view__item">
+                                <div class="blue__hover">
+                                    <div class="view__img"><img src="img/view3.png"
+                                                                alt="">
+                                    </div>
+                                    <div class="view__more">
+                                        <div><i class="fas fa-search"></i></div>
+                                        VIEW MORE
+                                    </div>
+                                </div>
+                                <div class="view__title">pixel perfection //</div>
+                                <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                                </div>
+                            </div>
+                        </div><!--VIEW--></a>
+                </div> <!--container-->
+            </section>
+    
+            <section class="ignite">
+                <button class="ignite__button"
+                        onclick="window.location.href = '#';">Ignite your passion
+                </button>
+            </section>
+    
+            <section class="team" id="team">
+                <div class="container">
+                    <div class="each__title"> <!--TITLE-->
+                        <div class="section__title">we’re a team that adore what we do</div>
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                        <img class="arrow"
+                             src="img/down.png"
+                             alt="">
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                    </div> <!--TITLE-->
+                    <div class="owl-carousel owl-theme team__inner" id="team__car">
+                        <div class="team__item"><img src="img/team1.png"
+                                                     alt="">
+                            <div class="view__title">jon snow</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
                             </div>
                         </div>
-                        <div class="view__item">
-                            <div class="blue__hover">
-                                <div class="view__img"><img src="img/view2.png"
-                                                            alt="">
-                                </div>
-                                <div class="view__more">
-                                    <div><i class="fas fa-search"></i></div>
-                                    VIEW MORE
-                                </div>
+                        <div class="team__item"><img src="img/team2.png"
+                                                     alt="">
+                            <div class="view__title">cersei lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
                             </div>
-                            <div class="view__title">think alike //</div>
-                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
-                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
-                                fames ac ante ipsum
-                                primis in faucibus.
+                            <div class="social">
+                                <a class="social__item "
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
                             </div>
                         </div>
-                        <div class="view__item">
-                            <div class="blue__hover">
-                                <div class="view__img"><img src="img/view3.png"
-                                                            alt="">
-                                </div>
-                                <div class="view__more">
-                                    <div><i class="fas fa-search"></i></div>
-                                    VIEW MORE
-                                </div>
+                        <div class="team__item"><img src="img/team3.png"
+                                                     alt="">
+                            <div class="view__title">jamie lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
                             </div>
-                            <div class="view__title">pixel perfection //</div>
-                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
-                                quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada
-                                fames ac ante ipsum
-                                primis in faucibus.
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
                             </div>
                         </div>
-                    </div><!--VIEW--></a>
-            </div> <!--container-->
-        </section>
+                        <div class="team__item"><img src="img/team1.png"
+                                                     alt="">
+                            <div class="view__title">jon snow</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item"><img src="img/team2.png"
+                                                     alt="">
+                            <div class="view__title">cersei lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item "
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item"><img src="img/team3.png"
+                                                     alt="">
+                            <div class="view__title">jamie lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item"><img src="img/team1.png"
+                                                     alt="">
+                            <div class="view__title">jon snow</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item"><img src="img/team2.png"
+                                                     alt="">
+                            <div class="view__title">cersei lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item "
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item"><img src="img/team3.png"
+                                                     alt="">
+                            <div class="view__title">jamie lannister</div>
+                            <div class="view__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            </div>
+                            <div class="social">
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-envelope"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="social__item"
+                                   href="#"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div> <!--team inner-->
         
-        <section class="ignite">
-            <button class="button" onclick="window.location.href = '#';">Ignite your passion</button>
-        </section>
+        
+                </div>
+            </section>
     
+            <section class="subscribe">
+                <div class="container">
+                    <i class="fas fa-paper-plane"></i>
+                    <form class="subscribe__form"
+                          action=""
+                          method="post">
+                        <div class="subscribe__title">SUBSCRIBE TO STAY IN THE LOOP</div>
+                        <input class="subscribe__input"
+                               type="email"
+                               name="name"
+                               placeholder="Your Email...">
+                        <button class="subscribe__btn"
+                                type="submit">send
+                        </button>
+                    </form>
+                    <div class="circle">
+                        <div class="circle__arrow"></div>
+                    </div>
+                </div>
+            </section>
     
-    
+            <footer class="footer" id="contacts">
+                <div class="container">
+                    <div class="each__title"> <!--TITLE-->
+                        <div class="section__title">DROP US A LINE</div>
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                        <img class="arrow"
+                             src="img/down.png"
+                             alt="">
+                        <img class="dots"
+                             src="img/dots.png"
+                             alt="">
+                    </div> <!--TITLE-->
+                    <div class="contacts">
+                        <div class="contacts__cards">
+                            <div class="contacts__inner">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contacts__title">Address</div>
+                                <div class="contacts__text">Level 6, 23 Pitt St, Sydney</div>
+                            </div>
+                        </div>
+                        <div class="contacts__cards">
+                            <div class="contacts__inner">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="contacts__title">Phone</div>
+                                <div class="contacts__text">+61 9 211 3741</div>
+                            </div>
+                        </div>
+                        <div class="contacts__cards">
+                            <div class="contacts__inner">
+                                <i class="fas fa-paper-plane"></i>
+                                <div class="contacts__title">Email</div>
+                                <div class="contacts__text"><span>hey@halcyon.com.au</span></div>
+                            </div>
+                        </div>
+                    </div> <!-- contacts-->
+                    <div class="social__net">
+                        <a class="social__item2"
+                           href="#"><i class="fas fa-envelope"></i></a>
+                        <a class="social__item2"
+                           href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social__item2"
+                           href="#"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div> <!--container-->
+                <div class="designed">
+                    <div class="container-footer">
+                        <div class="content">Terms & Conditions | Legals</div>
+                        <div class="content cont-2"><span>Designed & Developed by </span>Peter Finlan
+                            <span>exclusively for Codrops</span></div>
+                    </div>
+                </div>
+            </footer>
+       </div> <!-- page-->
     </body>
 </html>

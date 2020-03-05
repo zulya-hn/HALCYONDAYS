@@ -1,0 +1,86 @@
+.ignite {
+  padding: 60px 0;
+  background-color: #242830;
+  text-align: center; }
+
+.ignite__button {
+  padding: 30px 40px;
+  color: white;
+  background-color: #242830;
+  border: 1px solid white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2.25px; }
+
+.team {
+  padding: 90px 0; }
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px; }
+
+.team__item {
+  width: 30%;
+  text-align: center; }
+
+.subscribe {
+  background: url(../img/subscribe.png) center no-repeat;
+  padding: 120px 0;
+  text-align: center;
+  color: white; }
+  .subscribe i {
+    font-size: 25px; }
+
+.subscribe__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+  margin: 20px 0 45px 0; }
+
+.subscribe__form {
+  color: white; }
+
+.subscribe__input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  color: white;
+  width: 351px;
+  height: 65px;
+  padding-left: 20px;
+  outline: none;
+  box-shadow: none; }
+  .subscribe__input::placeholder {
+    color: #cdcdcd; }
+
+.subscribe__btn {
+  width: 97px;
+  height: 65px;
+  padding-top: 5px;
+  color: white;
+  background: #3dc9b3;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+.circle {
+  position: absolute;
+  left: 48%;
+  margin: 95px auto 30px auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3dc9b3;
+  opacity: 0.8; }
+
+.circle__arrow {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2%;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transform: translateY(-50%) rotate(-45deg); }
