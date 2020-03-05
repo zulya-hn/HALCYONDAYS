@@ -1,15 +1,14 @@
 // let owlCarousel = require('owl.carousel');
 
-$(document).ready(function(){
+$(document).ready ( function () {
+    
     $('#phone__car').owlCarousel({
         items:1,
         loop:true,
         margin:10,
         nav:false,
     });
-});
-
-$(document).ready(function(){
+    
     $('#team__car').owlCarousel({
         items: 3,
         dots:true,
@@ -28,14 +27,13 @@ $(document).ready(function(){
             }
         }
     });
-});
-
-// Menu nav toggle (burger)
-
-$('#nav_toggle').on('click', function (event) {
-    event.preventDefault();
     
-    $(this).toggleClass('active');
-    $('#nav').toggleClass('active');
+    // Menu nav toggle (burger)
     
+    $("#nav_toggle").on("click", function (event) {
+        event.preventDefault();
+        
+        $(this).toggleClass('active');
+        $('#nav').toggleClass('active');
+    });
 });
