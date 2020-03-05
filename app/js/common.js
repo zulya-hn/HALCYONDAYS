@@ -35,5 +35,6 @@ $(document).ready ( function () {
         
         $(this).toggleClass('active');
         $('#nav').toggleClass('active');
+        
     });
 });
