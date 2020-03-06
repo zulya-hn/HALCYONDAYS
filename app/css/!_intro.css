@@ -283,11 +283,24 @@
   .view__img img {
     max-width: 240px; } }
 
+@media (max-width: 925px) {
+  .iphone__block img {
+    max-width: 168%;
+    top: 4%;
+    transform: rotate(-18deg);
+    right: 30px; } }
+
 @media (max-width: 900px) {
   .carousel__block {
     padding: 50px 0; }
   .carousel__text {
     max-width: 350px; } }
+
+@media (max-width: 810px) {
+  .iphone__block img {
+    max-width: 160%;
+    top: 9%;
+    transform: rotate(-18deg); } }
 
 @media (max-width: 770px) {
   .love__inner {
@@ -312,7 +325,9 @@
   .carousel__block {
     background-color: #f3f5f8;
     margin: 0 auto;
-    box-shadow: none; }
+    box-shadow: none;
+    max-width: 800px;
+    width: inherit; }
   .dots-c {
     display: none; }
   .nature__title {
@@ -358,6 +373,10 @@
     max-width: 290px; }
   .nature__inner {
     padding: 40px 0 120px; } }
+
+@media (max-width: 380px) {
+  .carousel__block {
+    margin: 0 20px; } }
 
 .ignite {
   padding: 60px 0;
@@ -571,12 +590,22 @@
     display: block;
     margin: 50px 0; }
   .contacts__cards {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     max-width: 100%; }
   .social__item2 {
     margin-bottom: 50px; }
   .container-footer {
-    display: block; } }
+    text-align: center;
+    display: block;
+    width: 100%; }
+  .content {
+    display: block;
+    width: 100%;
+    margin: 10px 0; }
+  .designed {
+    padding: 30px 0; }
+  .footer {
+    padding: 60px 0 0; } }
 
 body {
   font-family: 'Comfortaa';
