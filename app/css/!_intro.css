@@ -616,15 +616,15 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 div {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 button {
   outline: none;
   border: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   font-family: inherit; }
   button:active {
     -webkit-transform: scale(0.98);
